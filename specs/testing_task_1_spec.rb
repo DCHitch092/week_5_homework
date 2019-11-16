@@ -21,12 +21,17 @@ class TestingTaskTest < Minitest::Test
   #   assert_equal(result, true)
   # end
 
-  def test_highest_card__card1_higher()
-    result = highest_card(card1, card2)
-    assert_equal(result, card1)
-  end
+  # def test_highest_card__first_card_higher()
+  #   result = highest_card(card1, card2)
+  #   assert_equal(result, card1)
+  # end
+  #
+  # def test_highest_card__second_card_higher()
+  #   result = highest_card(card1, card3)
+  #   assert_equal(result, card3)
+  # end
 
 
-  end
+
 
 end
