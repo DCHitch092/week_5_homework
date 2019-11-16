@@ -7,7 +7,7 @@ require_relative('card')
 class CardGame
 
   def self.check_for_ace(card)
-    if card.value == 1
+    if card.value.to_i == 1
       return true
     else
       return false
@@ -15,7 +15,7 @@ class CardGame
   end
 
   def highest_card(card1, card2)
-    if card1.value > card2.value
+    if card1.value.to_i > card2.value.to_i
       return card
     else
       return card2
