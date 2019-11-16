@@ -31,6 +31,11 @@ class TestingTaskTest < Minitest::Test
   #   assert_equal(result, card3)
   # end
 
+  # def test_cards_total
+  #   result = CardTest.cards_total([card1,card2,card3])
+  #   assert_equal(result, "You have a total of 20")
+  # end
+
 
 
 
