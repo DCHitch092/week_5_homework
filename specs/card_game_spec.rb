@@ -23,10 +23,10 @@ class CardGameTest < Minitest::Test
     assert_equal(true, result)
   end
 
-  # def test_highest_card__first_card_higher()
-  #   result = highest_card(card1, card2)
-  #   assert_equal(result, card1)
-  # end
+  def test_highest_card__first_card_higher()
+    result = CardGame.highest_card(@card1, @card2)
+    assert_equal(result, @card1)
+  end
   #
   # def test_highest_card__second_card_higher()
   #   result = highest_card(card1, card3)

@@ -14,9 +14,9 @@ class CardGame
     end
   end
 
-  def highest_card(card1, card2)
+  def self.highest_card(card1, card2)
     if card1.value.to_i > card2.value.to_i
-      return card
+      return card1
     else
       return card2
     end
