@@ -7,15 +7,15 @@
 class CardGame
 
 
-  def checkforAce(card)
-    # if card.value = 1
+  # def checkforAce(card) - should be self.
+    # if card.value = 1 - needs to be '=='
       return true
     else
       return false
     end
   end
 
-  # dif highest_card(card1 card2)
+  # dif highest_card(card1 card2) - spelling mistake, no comma, needs to be self.
   if card1.value > card2.value
     # return card
   else
@@ -28,7 +28,7 @@ def self.cards_total(cards)
   # total - needs to be established
   for card in cards
     total += card.value
-    # return "You have a total of" + total
+    # return "You have a total of" + total -- total needs to be string and taken outside of statement
   end
 # needs more end(s)
 ```
