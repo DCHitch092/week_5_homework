@@ -2,18 +2,19 @@ require('minitest/autorun')
 require('minitest/rg')
 require_relative('../card_game')
 require_relative('../card')
+require('pry')
 
-class TestingTaskTest < Minitest::Test
+class CardGameTest < Minitest::Test
 
-  def setup
-    @card1 = Card.new("clubs", "9")
-    @card2 = Card.new("clubs", "1")
-    @card2 = Card.new("hearts", "10")
-  end
+  # def setup
+    # @card1 = Card.new("clubs", "9")
+    # @card2 = Card.new("clubs", "1")
+    # @card2 = Card.new("hearts", "10")
+  # end
 
   def test_check_for_ace__not_ace()
-      @card1 = Card.new("clubs", "9")
-    result = check_for_ace(@card1)
+    @card1 = Card.new("clubs", 9)
+    result = CardGame.check_for_ace(@card1)
     assert_equal(result, false)
   end
 
